@@ -1,25 +1,86 @@
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+    scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.preact:hover {
-  filter: drop-shadow(0 0 2em #673ab8aa);
+body {
+    background-color: #000;
+    color: #fff;
 }
 
-.card {
-  padding: 2em;
+.gradiant-text {
+    -webkit-background-clip: text;
+    @apply bg-gradient-to-t from-yellow-300 to-yellow-500 text-transparent;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
+    text-wrap: nowrap;
+    display: inline-block;
+    width: max-content;
+    width: 0;
 }
 
-.read-the-docs {
-  color: #888;
+#projects li {
+    padding: 8px 12px;
+    /* Adjust padding as needed */
+    cursor: pointer;
+}
+
+#projects li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Adjust hover background color as needed */
+}
+
+/* CSS for the caret icon */
+.caret {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    /* Initial rotation */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Rotate caret icon when dropdown is open */
+.dropdown-open .caret {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* CSS for the dropdown list */
+.dropdown-button {
+    z-index: 1; /* Ensure button is above the dropdown */
+  }
+  
+  #projects {
+    z-index: 1; /* Ensure dropdown list is above other content */
+    width: 100%; /* Make list full width */
+  }
+  
+  .caret {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg); /* Initial rotation */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Rotate caret icon when dropdown is open */
+  .dropdown-open .caret {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+@keyframes typing-text {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 350px;
+    }
+}
+
+@keyframes typing-text {
+    to {
+        border-color: transparent;
+    }
 }
