@@ -5,7 +5,8 @@ import CRMProject from "./assets/crmProject.png";
 import ERPProject from "./assets/ERP.png";
 import FishFarmProject from "./assets/firshfarmingIot.png";
 import SavingsTracker from "./assets/savingsTracker.png";
-import Project4 from "./assets/project4.png";
+import TicketClassification from "./assets/ticket_classification.png";
+import GrainHumidityPrediction from "./assets/grainHumidityPrediction.png";
 import LeetCode from "./assets/leetcode.svg";
 import GitHub from "./assets/github.svg";
 import PhoneIconSVG from "./assets/mobile.svg";
@@ -45,6 +46,23 @@ function App() {
       title: "Plato - CRM Tool",
       techStack: "PHP Laravel, PHP YII, MySql",
       description: "A Vital Internal CRM Tool at Pickyourtrail, a Leading Tourism Brand in India. Spearheaded the migration from the YII(1.0) framework to Laravel(8), optimizing performance and scalability. Overhauled the database architecture to accommodate a surge in user volume. Collaborated cross-functionally to implement innovative features like Lead Allocation across Sales, Customer Happiness, and Visa Teams.",
+    },
+  ];
+
+  const MlProjectList = [
+    {
+      image: TicketClassification,
+      title: "Ticket Classification",
+      techStack: "Python, Django",
+      gitLink:"https://github.com/naveenkumarkk/ticket-classification",
+      description: "In any machine learning task, cleaning or preprocessing the data is as important as model building if not more. And when it comes to unstructured data like text, this process is even more important. I have implemented preprocessing steps such as Lower casing,Removal of Punctuations,Removal of Stopwords,Removal of Frequent words,Removal of Rare words,Number to words/ignoring numbers,Stemming,Lemmatization,Removal of emojis,Removal of emoticons,Conversion of emoticons to words,Conversion of emojis to words,Removal of URLs,Removal of HTML tags,Chat words conversion,Spelling correction and used supervised learning to find the classification of the query.",
+    },
+    {
+      image: GrainHumidityPrediction,
+      title: "Grain Humidity Prediction",
+      techStack: "Python",
+      gitLink: "https://github.com/naveenkumarkk/grain_humidity",
+      description: "This project aims to address the challenge of predicting grain moisture content during the drying process. Currently, the drying process is controlled manually, which often results in either over-drying (wasting energy) or under-drying (requiring additional drying time). By accurately predicting the moisture content at various time points, we can optimize the drying process, improving efficiency and saving energy. This problem is especially relevant for industries involved in grain storage and processing, where maintaining proper moisture levels is crucial for preventing spoilage.",
     },
   ];
 
@@ -113,6 +131,7 @@ function App() {
                       Projects <span className="caret"></span>
                     </button>
                     <ul className="absolute hidden bg-gray-800 text-white py-2 rounded-md shadow-lg left-0 top-full w-full" id="projects">
+                      <li onClick={() => handleProjectClick("be-projects")}>ML Projects</li>
                       <li onClick={() => handleProjectClick("fe-projects")}>FE Projects</li>
                       <li onClick={() => handleProjectClick("be-projects")}>BE Projects</li>
                     </ul>
@@ -153,11 +172,11 @@ function App() {
             <div>
               <h2 className="font-bold text-4xl">Hello, I'm Naveen Kumar,</h2>
               <div>
-                <h2 className="font-bold text-4xl mt-1 gradiant-text">Backend developer</h2>
+                <h2 className="font-bold text-4xl mt-1 gradiant-text">ML & Backend developer</h2>
               </div>
               <div>
                 <p className="mt-4 text-gray-200">
-                  Welcome to my portfolio website! As a dedicated backend developer proficient in PHP, Laravel, and Node.js, I bring a wealth of experience and expertise to every project I undertake. While continuously expanding my skill set, I'm currently delving into the realms of Python and React.js, further enriching my toolkit for building robust and dynamic applications.
+                  Welcome to my portfolio website! As a dedicated ML and backend  developer proficient in Python, PHP, Laravel, and Node.js, I bring a wealth of experience and expertise to every project I undertake. While continuously expanding my skill set, I'm currently delving into the realms of React.js, further enriching my toolkit for building robust and dynamic applications.
                 </p>
                 <a href={Resume} download>
                   <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-yellow-300 rounded-full to-yellow-500 hover:from-yellow-300 hover:to-yellow-500 text-black hover:text-white">
@@ -200,6 +219,23 @@ function App() {
 
         {/* Projects section */}
         <section id="projects">
+          <section id='ml-projects'>
+          <div className="container m-auto px-2 sm:py-12">
+              <h2 className="text-2xl font-semibold">Machine Learning Projects:</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mt-8">
+                {MlProjectList.map((project, index) => (
+                  <ProjectCard
+                    key={index}
+                    image={project.image}
+                    title={project.title}
+                    techStack={project.techStack}
+                    gitLink={project.gitLink}
+                    description={project.description}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
           <section id="be-projects">
             <div className="container m-auto px-2 sm:py-12">
               <h2 className="text-2xl font-semibold">BackEnd-Projects:</h2>
