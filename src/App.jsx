@@ -172,11 +172,11 @@ function App() {
             <div>
               <h2 className="font-bold text-4xl">Hello, I'm Naveen Kumar,</h2>
               <div>
-                <h2 className="font-bold text-4xl mt-1 gradiant-text">ML & Backend developer</h2>
+                <h2 className="font-bold text-4xl mt-1 gradiant-text">AI/ML developer</h2>
               </div>
               <div>
                 <p className="mt-4 text-gray-200">
-                  Welcome to my portfolio website! As a dedicated ML and backend  developer proficient in Python, PHP, Laravel, and Node.js, I bring a wealth of experience and expertise to every project I undertake. While continuously expanding my skill set, I'm currently delving into the realms of React.js, further enriching my toolkit for building robust and dynamic applications.
+                  Welcome to my portfolio website! As a dedicated AI/ML and backend  developer proficient in Python, PHP, Laravel, and Node.js, I bring a wealth of experience and expertise to every project I undertake. While continuously expanding my skill set, I'm currently delving into the realms of React.js, further enriching my toolkit for building robust and dynamic applications.
                 </p>
                 <a href={Resume} download>
                   <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-yellow-300 rounded-full to-yellow-500 hover:from-yellow-300 hover:to-yellow-500 text-black hover:text-white">
@@ -336,8 +336,8 @@ function App() {
 
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-bold">Python</h2>
-                  <p className="text-gray-450">Beginner</p>
+                  <h2 className="font-bold">Python Django</h2>
+                  <p className="text-gray-450">Advanced</p>
                 </div>
                 <span className="w-[25%] h-2 mt-2 bg-gradient-to-t from-yellow-300 to-yellow-500 block rounded-md" />
               </div>
@@ -505,7 +505,20 @@ function App() {
                       <strong className="text-gray-200">Experience</strong>: Backend Developer at Pickyourtrail
                     </li>
                     <li>
-                      <strong className="text-gray-200">Project</strong>: Plato - Customer Relationship Management Tool (Web Development) (July 2021)
+                      <strong className="text-gray-200">Project</strong>: Plato - Customer Relationship Management Tool (Web Development) (July 2021 - August 2024)
+                    </li>
+                  </ul>
+                </p>
+              </div>
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-yellow-300 before:to-yellow-500 before:absolute before:rounded-full before:left-[58px]">
+                <h3 className="absolute left-0 text-lg font-semibold">2025</h3>
+                <p className="text-gray-300">
+                  <ul>
+                    <li>
+                      <strong className="text-gray-200">Position</strong>: Master's student
+                    </li>
+                    <li>
+                      Started my Master's in Computer Science at the University of Tartu (August 2024)
                     </li>
                   </ul>
                 </p>
