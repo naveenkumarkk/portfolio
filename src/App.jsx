@@ -76,13 +76,13 @@ function App() {
 
 
   const copyPhoneNumberToClipboard = () => {
-    navigator.clipboard.writeText('7639824907');
+    navigator.clipboard.writeText('+372 53706256');
     setIsPhoneCopied(true);
     setTimeout(() => setIsPhoneCopied(false), 2000); // Reset copied state after 2 seconds
   };
 
   const copyEmailToClipboard = () => {
-    navigator.clipboard.writeText('jayakulandhaivel@gmail.com');
+    navigator.clipboard.writeText('naveenkumar@ut.ee');
     setIsEmailCopied(true);
     setTimeout(() => setIsEmailCopied(false), 2000); // Reset copied state after 2 seconds
   };
