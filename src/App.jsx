@@ -7,7 +7,7 @@ import FishFarmProject from "./assets/firshfarmingIot.png";
 import SavingsTracker from "./assets/savingsTracker.png";
 import TicketClassification from "./assets/ticket_classification.png";
 import GrainHumidityPrediction from "./assets/grainHumidityPrediction.png";
-import CancerClassification from "./assets/cancer_classification.png";
+import CancerClassification from "./assets/cancer_classification.jpeg";
 import LeetCode from "./assets/leetcode.svg";
 import GitHub from "./assets/github.svg";
 import PhoneIconSVG from "./assets/mobile.svg";
