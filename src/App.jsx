@@ -7,6 +7,7 @@ import FishFarmProject from "./assets/firshfarmingIot.png";
 import SavingsTracker from "./assets/savingsTracker.png";
 import TicketClassification from "./assets/ticket_classification.png";
 import GrainHumidityPrediction from "./assets/grainHumidityPrediction.png";
+import CancerClassification from "./assets/cancer_classification.png";
 import LeetCode from "./assets/leetcode.svg";
 import GitHub from "./assets/github.svg";
 import PhoneIconSVG from "./assets/mobile.svg";
@@ -50,6 +51,13 @@ function App() {
   ];
 
   const MlProjectList = [
+     {
+      image: CancerClassification,
+      title: "Multi model Cancer Classification",
+      techStack: "Python, Multimodel, Cascade Of Expert, ResNet, Knn, SVM ",
+      gitLink: "https://github.com/naveenkumarkk/multimodel",
+      description: "Multi-Model Cancer Classification system using a Cascade of Experts approach. The pipeline was designed to handle two types of inputs: images and CSV files. For image inputs, the system first routes the image to a domain expert such as Brain, Kidney, Pancreas, or Skin. If the image belongs to one of these categories, a specialized classifier is applied to identify the specific tumor type within that organ. If the image does not match any of the supported domains, the output is returned as “Unspecified.” For CSV inputs, the pipeline routes the data to cancer-related classifiers, with current support for general cancer classification and Breast Cancer classification. This setup essentially functions as a router–expert system, where the router determines the input type and category before delegating the prediction to a specialized model.",
+    },
     {
       image: TicketClassification,
       title: "Ticket Classification",
